@@ -1,0 +1,24 @@
+== Overview ==
+SlangSD.txt is the Slang Sentiment Dictionary (SlangSD).
+
+== Data Format ==
+Each line is an entry, a <word, sentiment score> pair. The line is tab separated. each line will contain exactly one tab character. All of the characters before the tab indicate the word. It is possible for words to contain spaces, as well as punctuation. All of the characters after the tab, and until the newline character indicate the sentiment score. The sentiment score can be one of five possible values:
+
+-2: strongly negative
+-1: negative
+ 0: neutral
+ 1: positive
+ 2: strongly positive
+
+== Usage Policy ==
+The dictionary is free to use. If you use it for an academic publication, we ask that you cite it using the citation below. If it is used in anything other than an academic publication, we ask that you provide a credit and link to SlangSD.com.
+
+@article{DBLP:journals/corr/Wu-etal16,
+  author    = {Liang Wu and Fred Morstatter and Huan Liu},
+  title     = {SlangSD: Building and Using a Sentiment Dictionary of Slang Words for Short-Text Sentiment Classification},
+  journal   = {CoRR},
+  volume    = {abs/1608.05129},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1608.05129},
+  timestamp = {Wed, 17 Aug 2016 23:32:57 GMT}
+}
